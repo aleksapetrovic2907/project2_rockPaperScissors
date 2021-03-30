@@ -8,7 +8,7 @@ let options = ["rock", "paper", "scissors"];
 function promptPlayerForOption() {
     do {
         option = prompt("Rock, paper or scissors?").toLowerCase();
-    } while (option != "rock" && option != "paper" && option != "scissors");
+    } while (!options.includes(option));
     return option;
 }
 
