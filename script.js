@@ -3,8 +3,8 @@ let wonGames = 0;
 
 let playerOption;
 let cpuOption;
-
 let options = ["rock", "paper", "scissors"];
+
 function promptPlayerForOption() {
     do {
         option = prompt("Rock, paper or scissors?").toLowerCase();
@@ -13,7 +13,7 @@ function promptPlayerForOption() {
 }
 
 function computerSelectOption() {
-    return options[Math.floor(Math.random() * 2 + 1)];
+    return options[Math.floor(Math.random() * options.length)];
 }
 
 function playRound(playerOption, cpuOption) {
